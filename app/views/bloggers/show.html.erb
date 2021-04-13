@@ -1,0 +1,10 @@
+<h1>bloggers show page</h1>
+
+<p> Name: <%= @blogger.name %> </p>
+<p> Bio: <%= @blogger.bio %> </p>
+<p> Age: <%= @blogger.age %> </p>
+
+
+<%= button_to "Delete Blogger", blogger_path(@blogger.id), method: :delete %>
+
+<%= link_to "index", bloggers_path %>
